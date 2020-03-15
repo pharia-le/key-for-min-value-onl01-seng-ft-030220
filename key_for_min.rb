@@ -9,8 +9,8 @@ def key_for_min_value(name_hash)
   name_hash.map do |k, v|
     if lowest == '' || lowest.to_i > v
       lowest = v.to_s
-      new_key[0] = k
+      new_key[0] = k 
     end
   end
-  new_key[0]
+  new_key
 end
